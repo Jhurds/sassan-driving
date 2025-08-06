@@ -248,6 +248,12 @@ body {
   }
 }
 
+/* Packages Section */
+.pricing {
+  padding: 6rem 0;
+  background: var(--bg-light);
+}
+
 /* Features Section */
 .features {
   padding: 6rem 0;
