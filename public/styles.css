@@ -92,12 +92,8 @@ body {
   transform: translateY(0);
 }
 
-ul {
-  list-style-position: inside;
-}
-
 .cta-button:hover {
-  background: var(--primary-dark);
+  background: var(--accent);
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
@@ -143,7 +139,9 @@ ul {
 .margin-4 {
   margin-top: 4rem;
 }
-
+.margin-1 {
+  margin-top: 1rem;
+}
 .max-600 {
   max-width: 600px;
 }
@@ -181,7 +179,7 @@ ul {
 }
 
 .btn-primary {
-  background: var(--secondary);
+  background: var(--primary);
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -195,7 +193,7 @@ ul {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+  background: var(--accent);
 }
 
 .btn-secondary {
@@ -266,7 +264,7 @@ ul {
 
 /* Packages Section */
 .pricing {
-  padding: 6rem 0;
+  padding: 3rem 0;
   /* background: var(--accent); */
 }
 
@@ -280,12 +278,15 @@ ul {
 
 /* Features Section */
 .features {
-  padding: 6rem 0;
+  padding: 3rem 0;
   /* background: var(--bg-light); */
 }
 
 .section-header {
   text-align: center;
+}
+
+.margin-bottom-4 {
   margin-bottom: 4rem;
 }
 
@@ -446,7 +447,6 @@ ul {
   padding: 6rem 0;
   /* background: var(--gradient); */
   text-align: center;
-
   position: relative;
   overflow: hidden;
 }
@@ -478,6 +478,10 @@ ul {
 .cta-content {
   position: relative;
   z-index: 2;
+}
+
+.cta-content a {
+  letter-spacing: 0.1rem;
 }
 
 .cta-content h2 {
@@ -512,7 +516,7 @@ ul {
 
 .footer-section h3 {
   margin-bottom: 1rem;
-  color: var(--secondary);
+  color: var(--bg-light);
 }
 
 .footer-section p,
@@ -589,6 +593,14 @@ ul {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.accented {
+  color: var(--accent);
+}
+
+.margin-left-2 {
+  margin-left: 2rem;
 }
 
 .contact-form-section {
