@@ -303,6 +303,13 @@ ul {
   gap: 2rem;
 }
 
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .feature-card {
   background: white;
   padding: 2rem;
@@ -311,6 +318,8 @@ ul {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  flex: 1 1 30%;
+  max-width: 33%;
 }
 
 .feature-card::before {
