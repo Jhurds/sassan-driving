@@ -99,24 +99,23 @@ ul {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
-  background: var(--gradient);
   position: relative;
-  overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="white" stop-opacity="0.1"/><stop offset="100%" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="300" r="100" fill="url(%23a)"/><circle cx="800" cy="200" r="150" fill="url(%23a)"/><circle cx="600" cy="700" r="120" fill="url(%23a)"/></svg>');
-  animation: float 20s ease-in-out infinite;
-}
+/* .hero::before { */
+/*   content: ""; */
+/*   position: absolute; */
+/*   top: 0; */
+/*   left: 0; */
+/*   right: 0; */
+/*   bottom: 0; */
+/*   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="white" stop-opacity="0.1"/><stop offset="100%" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="300" r="100" fill="url(%23a)"/><circle cx="800" cy="200" r="150" fill="url(%23a)"/><circle cx="600" cy="700" r="120" fill="url(%23a)"/></svg>'); */
+/*   animation: float 20s ease-in-out infinite; */
+/* } */
 
 @keyframes float {
   0%,
@@ -136,6 +135,10 @@ ul {
   z-index: 2;
 }
 
+.margin-4 {
+  margin-top: 4rem;
+}
+
 .max-600 {
   max-width: 600px;
 }
@@ -144,7 +147,6 @@ ul {
   text-align: center;
   font-size: 5rem;
   font-weight: 800;
-  color: white;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   animation: slideInLeft 1s ease-out;
@@ -153,8 +155,6 @@ ul {
 .hero-text h2 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: white;
-  text-align: right;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   animation: slideInLeft 1s ease-out;
@@ -162,8 +162,8 @@ ul {
 
 .hero-text p {
   font-size: 1.25rem;
+  text-align: right;
   max-width: 1024px;
-  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   animation: slideInLeft 1s ease-out 0.2s both;
 }
@@ -261,7 +261,7 @@ ul {
 /* Packages Section */
 .pricing {
   padding: 6rem 0;
-  background: var(--accent);
+  /* background: var(--accent); */
 }
 
 .text-centered {
@@ -275,7 +275,7 @@ ul {
 /* Features Section */
 .features {
   padding: 6rem 0;
-  background: var(--bg-light);
+  /* background: var(--bg-light); */
 }
 
 .section-header {
@@ -431,8 +431,9 @@ ul {
 /* CTA Section */
 .cta-section {
   padding: 6rem 0;
-  background: var(--gradient);
+  /* background: var(--gradient); */
   text-align: center;
+
   position: relative;
   overflow: hidden;
 }
@@ -444,12 +445,12 @@ ul {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 0%,
-    transparent 70%
-  );
-  animation: rotate 20s linear infinite;
+  /* background: radial-gradient( */
+  /*   circle, */
+  /*   rgba(255, 255, 255, 0.1) 0%, */
+  /*   transparent 70% */
+  /* ); */
+  /* animation: rotate 20s linear infinite; */
 }
 
 @keyframes rotate {
@@ -469,13 +470,13 @@ ul {
 .cta-content h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  /* color: white; */
   margin-bottom: 1rem;
 }
 
 .cta-content p {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  /* color: rgba(255, 255, 255, 0.9); */
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
