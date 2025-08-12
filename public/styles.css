@@ -87,6 +87,10 @@ body {
   transform: translateY(0);
 }
 
+ul {
+  list-style-position: inside;
+}
+
 .cta-button:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
@@ -130,6 +134,10 @@ body {
   align-items: center;
   position: relative;
   z-index: 2;
+}
+
+.max-600 {
+  max-width: 600px;
 }
 
 .hero-text h1 {
