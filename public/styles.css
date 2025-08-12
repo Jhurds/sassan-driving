@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/font/Roboto-Regular.ttf");
+}
+
 :root {
   --primary: #374151;
   --primary-dark: #1f2937;
   --secondary: #6b7280;
-  --accent: #9ca3af;
+  --accent: #ff2125;
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --bg-light: #f8fafc;
@@ -19,7 +24,7 @@
 
 body {
   font-family:
-    "Inter",
+    "Roboto",
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;
@@ -163,6 +168,7 @@ ul {
 .hero-text p {
   font-size: 1.25rem;
   text-align: right;
+  color: var(--accent);
   max-width: 1024px;
   margin-bottom: 2rem;
   animation: slideInLeft 1s ease-out 0.2s both;
@@ -290,6 +296,13 @@ ul {
   margin-bottom: 1rem;
 }
 
+.cta-content h4 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
 .section-header p {
   font-size: 1.125rem;
   color: var(--text-light);
@@ -329,7 +342,7 @@ ul {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--gradient);
+  background: var(--accent);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -438,20 +451,20 @@ ul {
   overflow: hidden;
 }
 
-.cta-section::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  /* background: radial-gradient( */
-  /*   circle, */
-  /*   rgba(255, 255, 255, 0.1) 0%, */
-  /*   transparent 70% */
-  /* ); */
-  /* animation: rotate 20s linear infinite; */
-}
+/* .cta-section::before { */
+/*   content: ""; */
+/*   position: absolute; */
+/*   top: -50%; */
+/*   left: -50%; */
+/*   width: 200%; */
+/*   height: 200%; */
+/*   background: radial-gradient( */
+/*     circle, */
+/*     rgba(255, 255, 255, 0.1) 0%, */
+/*     transparent 70% */
+/*   ); */
+/*   animation: rotate 20s linear infinite; */
+/* } */
 
 @keyframes rotate {
   from {
@@ -576,4 +589,43 @@ ul {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.contact-form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section label {
+  margin-top: 1rem;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size: 1rem;
+}
+
+.contact-form-section button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: var(--secondary);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form-section button:hover {
+  background: #45a049;
 }
