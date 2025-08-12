@@ -126,7 +126,6 @@ body {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
   position: relative;
@@ -134,7 +133,8 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  text-align: center;
+  font-size: 5rem;
   font-weight: 800;
   color: white;
   margin-bottom: 1.5rem;
@@ -146,6 +146,7 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   color: white;
+  text-align: right;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   animation: slideInLeft 1s ease-out;
@@ -153,6 +154,7 @@ body {
 
 .hero-text p {
   font-size: 1.25rem;
+  max-width: 1024px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   animation: slideInLeft 1s ease-out 0.2s both;
@@ -251,7 +253,15 @@ body {
 /* Packages Section */
 .pricing {
   padding: 6rem 0;
-  background: var(--bg-light);
+  background: var(--accent);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 /* Features Section */
