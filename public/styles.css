@@ -332,8 +332,8 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  flex: 1 1 30%;
-  max-width: 33%;
+  flex: 1 0 30%;
+  min-width: 200px;
 }
 
 .feature-card::before {
@@ -571,11 +571,20 @@ body {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    text-align: center;
   }
 
   .section-header h2 {
