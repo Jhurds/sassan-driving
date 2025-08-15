@@ -334,6 +334,7 @@ body {
   overflow: hidden;
   flex: 1 0 30%;
   min-width: 200px;
+  max-width: 33%;
 }
 
 .feature-card::before {
@@ -580,6 +581,10 @@ ul {
 
   .hero-text h1 {
     font-size: 3rem;
+  }
+
+  .feature-card {
+    max-width: unset;
   }
 
   .hero-text p {
