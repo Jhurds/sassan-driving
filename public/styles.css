@@ -594,6 +594,10 @@ ul {
     font-size: 3rem;
   }
 
+  .hero {
+    min-height: 50vh;
+  }
+
   .feature-card {
     max-width: unset;
   }
