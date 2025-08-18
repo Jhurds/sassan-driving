@@ -18,6 +18,7 @@
   --text-light: #6b7280;
   --bg-light: #f8fafc;
   --white: #ffffff;
+  --cta: hsl(215 100% 50%);
   --shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --gradient: linear-gradient(135deg, #4b5563 0%, #374151 100%);
 }
@@ -31,6 +32,7 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   overflow-x: hidden;
+  background-color: hsl(125 100% 99.5%);
 }
 
 .container {
@@ -82,7 +84,7 @@ body {
 }
 
 .cta-button {
-  background: var(--primary);
+  background: var(--cta);
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -179,7 +181,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: var(--cta);
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -624,6 +626,7 @@ ul {
 }
 
 .contact-form-section form {
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
 }
@@ -642,9 +645,10 @@ ul {
 }
 
 .contact-form-section button {
+  font-family: "Roboto";
   margin-top: 1.5rem;
   padding: 0.8rem;
-  background: var(--secondary);
+  background: var(--cta);
   color: #fff;
   font-size: 1rem;
   border: none;
