@@ -32,7 +32,7 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   overflow-x: hidden;
-  background-color: hsl(125 100% 99%);
+  background-color: hsl(125 100% 98.5%);
 }
 
 .container {
