@@ -23,6 +23,14 @@
   --gradient: linear-gradient(135deg, #4b5563 0%, #374151 100%);
 }
 
+#instructors {
+  scroll-margin-top: 80px;
+}
+
+#pricing {
+  scroll-margin-top: 60px;
+}
+
 body {
   font-family:
     "Roboto",
