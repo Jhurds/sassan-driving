@@ -116,7 +116,12 @@
             aria-hidden="true"
             loading="lazy"
           />
-          <a href="tel:+1-604-671-1916" class="cta-button">CALL NOW</a>
+          <a
+            onclick="return gtag_report_conversion('tel:+1-604-671-1916');"
+            href="tel:+1-604-671-1916"
+            class="cta-button"
+            >CALL NOW</a
+          >
         </div>
       </nav>
     </header>
@@ -328,6 +333,7 @@
         action="thankyou.html"
         method="POST"
         data-netlify="true"
+        onclick=""
       >
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
