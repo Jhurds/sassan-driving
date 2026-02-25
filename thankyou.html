@@ -14,20 +14,43 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-M6RGC9ZH");
     </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-    <!-- <script -->
-    <!--   async -->
-    <!--   src="https://www.googletagmanager.com/gtag/js?id=AW-17583492134" -->
-    <!-- ></script> -->
-    <!-- <script> -->
-    <!--   window.dataLayer = window.dataLayer || []; -->
-    <!--   function gtag() { -->
-    <!--     dataLayer.push(arguments); -->
-    <!--   } -->
-    <!--   gtag("js", new Date()); -->
-    <!--   gtag("config", "AW-17583492134"); -->
-    <!-- </script> -->
+
+    <!-- Microsoft Conversion Tracker --->
+    <script>
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: "187222100", enableAutoSpaTracking: true };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== "loaded" && s !== "complete") ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+
+    <!-- Microsoft Load Page Tracker -->
+    <script>
+      window.uetq = window.uetq || [];
+      window.uetq.push("event", "Form Submitted", {});
+    </script>
+
+    <!-- Microsoft Call Tracker -->
+    <script>
+      function uet_report_conversion() {
+        window.uetq = window.uetq || [];
+        window.uetq.push("event", "contact", {});
+      }
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
